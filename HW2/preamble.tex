@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{epstopdf}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+\usepackage{amssymb}
+\newcommand{\volume}{\mathop{\ooalign{\hfil$V$\hfil\cr\kern0.08em--\hfil\cr}}\nolimits}
+\usepackage{ mathrsfs }
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+\renewcommand\thesection{Problem \arabic{section}: \hspace*{-1em}}
+\renewcommand\thesubsection{\alph{subsection}.}
+%\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}}
+\usepackage{bm}
+\usepackage{multicol}
+\usepackage{paracol}
+\usepackage{mdframed}
+\usepackage{mhchem}
+\newcommand{\putpicture}[4]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = #2\textwidth]{#1}
+		\caption{#3}
+		\label{#4}
+	\end{figure}
+}
+%\usepackage[style=apa]{biblatex}
+%\addbibresource{apabib.bib}
+% \usepackage{../../latexStyles/mcode}
+\usepackage[natbibapa]{apacite}
+\setlength\bibsep{\baselineskip}
+\usepackage{fancyhdr}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{%
+	\parindent=0pt% don't indent paragraphs in the title block
+	\centering
+	{\Large \bfseries\textsc{\@title}} \hfill \textit{Digital Signal Processing} \hfill {\Large EC516}
+	\HRule\par%
+	\textit{\@author \hfill \hspace*{.3in} \hfill \@date \\
+	\hfill \hspace*{.3in} \hfill}
+	\par
+}
+\makeatother% resets the meaning of the at-sign (@)
+\usepackage{../../mcode}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+
+\title{Homework 2}
+\author{Jeremiah Sullivan}
+% \program{Ocean Acoustics}
+\date{\today}
+
+\pagestyle{fancy}
+\lhead{Jeremiah Sullivan}
+\rhead{\today}
+\chead{HW2}
+\cfoot{Page \thepage}
+\lfoot{Spring 2017}
+\rfoot{EC516}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\usepackage{blindtext}
+\usepackage{mwe}
